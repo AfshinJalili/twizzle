@@ -25,10 +25,10 @@ export default function ForYouFeed() {
   }
 
   return (
-    <>
+    <div className="space-y-5">
       {query.data.map((post) => (
         <Post key={post.id} post={post} />
       ))}
-    </>
+    </div>
   );
 }
